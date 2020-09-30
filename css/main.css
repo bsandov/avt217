@@ -1,0 +1,32 @@
+* {
+  margin:50;
+  padding: 50;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-align: center;
+}
+h1 {
+  font-family: lust, serif;
+  color: pink;
+  font-size: 45px;
+  text-transform: none;
+}
+a:link, a:visited {
+  color: white;
+}
+li:hover, a:active {
+  color: purple;
+}
+li {
+  margin-bottom: 14px;
+}
+ul {
+  list-style-type: none;
+}
