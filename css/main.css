@@ -26,8 +26,9 @@ main {
 .col {
   width: 50%;
   float: left;
-  padding-right:30px;
+  padding-right:0 25px;
 }
+
 /*** type styles ***/
 
 h1 {
@@ -48,4 +49,21 @@ li {
 ul {
   list-style-type: none;
   border-left: 3px solid pink;
+}
+
+/*** media queries ***/
+@media screen and (max-width: 1082px) {
+  .col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  header {
+    width: 90vw;
+  }
+  main {
+    width: 90vw;
+  }
+  h1 {
+    font-size: 3rem;
+  }
 }
