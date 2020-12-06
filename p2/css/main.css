@@ -1,18 +1,232 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	padding: 0;
+	background-color: #333333;
+}
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+#container {
+  margin: 0 auto;
+  display: flow-root;
+	flex-direction: column;
+  min-height: 100vh;
+  /*align-items: center;*/
+}
+h1 {
+  font-family: roboto,sans-serif;
+  font-weight: 900;
+  font-style: italic;
+	float: left;
+}
+nav {
+	float:right;
+}
+h2{
+	text-transform:uppercase;
+	font-weight: 900;
+  font-style: italic;
+	font-size: 50px;
+	letter-spacing: 5px;
+	color: #333333;
+	margin-left: 50px;
+}
+#TitleBorder{
+	width:500px;height:75px;
+	border: none;
+	background-color: #DEAB00;
+	margin-top: 75px;
+}
+header {
+	background: #DEAB00;
+	display: flex;
+	justify-content: space-between;
+	/*width: auto;*/
+	position: sticky;
+	top: 0;
+	height: 12vh;
+	/*align-items: center;*/
+	box-shadow: 0px 10px  5px rgba(0,0,0,0.6);
+	font-size: 40px;
+}
+#Logo,  #NavList{
+    color: #333333;
+    font-size: 2.5rem;
+    margin: 15px;
+    text-transform: uppercase;
+}
+main{
+	/*background-color: yellow;*/
+	font-family: roboto, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	color: white;
+}
+p {
+	margin-top: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+	line-height: 40px;
+	font-size: 20px;
+}
+.content p{
+ font-size: 25px
+}
+.content2 img {
+	/*display: flow-root;*/
+	padding: inherit;
+	height: 5vh;
+	margin-left: 60px;
+	margin-bottom:100px;
+}
+#hours li{
+	text-decoration: none;
+	list-style-type: none;
+	padding: 10px;
+	font-size: 20px;
+}
+#hours {
+	margin-top: 50px;
+}
+.col {
+	width: 50%;
+  float: left;
+  padding-right:0 25px;
+	margin-bottom: 10vh;
+}
+#NavList li {
+    font-family: roboto,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    display: inline;
+    margin: 0 15px;
+}
+#Logo a, #NavList a, #Logo a:visited, #NavList a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+#Logo a:hover, #Logo a:active, #NavList a:hover, #NavList a:active {
+    color: white;
+}
+.hero {
+	background: url(../images/1eating.jpg) no-repeat center center;
+  background-size: cover;
+	padding: 350px 100px;
+	border-bottom: solid 40px #DEAB00;
+}
+.hero2 {
+	background: url(../images/2fishsandwich.jpg) no-repeat center center;
+	background-size: cover;
+	/*background-position: top;*/
+	padding: 350px 100px;
+	border-top: solid 40px #DEAB00;
+	border-bottom: solid 40px #DEAB00;
+	margin-top: 200px;
+}
+.hero h3, .hero2 h3, .hero3 h3, .hero4 h3 {
+	text-align: center;
+	text-transform: uppercase;
+	text-size: 40px;
+	letter-spacing: 2px;
+	color: #DEAB00;
+}
+#clickbox {
+	width:215px;height:60px;
+  border: none;
+  background-color: #333333;
+  box-shadow: 0px 10px  5px rgba(0,0,0,0.3);
+  border-radius:10px;
+	margin: auto;
+}
+h3 {
+	padding-top: 15px;
+}
+footer {
+	background-color: #DEAB00;
+	font-family: roboto, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: white;
+	text-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	height: 10vh;
+	padding: 25px;
+}
+.hero3 {
+	background: url(../images/3interior.jpg) no-repeat center center;
+  background-size: cover;
+	padding: 350px 100px;
+	border-bottom: solid 40px #DEAB00;
+}
+.hero4 {
+	background: url(../images/4patio.jpg) no-repeat center center;
+	background-size: cover;
+	background-position: bottom;
+	padding: 350px 100px;
+	border-top: solid 40px #DEAB00;
+	margin-top: 200px;
+}
+#tagline {
+	text-align: center;
+	color: white;
+	text-shadow: -1px -1px 20px #000;
+	font-size: 50px;
+
+}
 
 
 
-
-
-
-
-
-@media screen and (max-width: 900px) {
+/* different screen resolution */
+@media screen and (max-width: 500px) {
 	body{
-		background-color: red;
+		/*background-color: red;*/
+		width:100vw
 	}
-	#hero {
-		object-fit: cover;
-		width: 10%;
+	.col {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  header {
+    width: 100vw;
+	}
+  main {
+    width: 100vw;
+  }
+	#container {
+		width: 100%;
+		flex-direction: row;
+	}
+	#Logo,  #NavList {
+    font-size: 50%;
+		margin: 20px;
+  }
+	#NavList li {
+    display: inline;
+	}
+	.content p, .content2 p{
+		font-size: 125%;
+		line-height: 30px;
+	}
+	.hero #clickbox {
+		align-content: space-between;
+	}
+	.hero, .hero2.{
+		background-size: cover;
+		padding: 30 30 30;
+		object-fit: contain;
+		width: 100vw;
 		height: auto;
+		text-align: center;
 	}
+	/* #tagline {
+		text-align: center;
+		color:#DEAB00;
+		text-shadow: 2px 2px 1px #333333;*/
 }
